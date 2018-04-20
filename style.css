@@ -1,0 +1,33 @@
+html {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.3) ),url(http://i.imgur.com/XLtSjHh.jpg);
+  background-attachment: fixed;
+  font-family: 'Dosis', 'Oxygen', sans-serif;
+  background-size: cover;
+}
+
+#main {
+	display: flex;
+	flex-direction: column;
+	min-height: 50vh;
+	justify-content: center;
+	text-align: center;
+}
+h1 {
+  width: 100%;
+  text-transform: uppercase;
+  text-shadow: 5px 5px darkslategrey;
+  font-size: 6em;
+}
+.stylized {
+  font-family: 'Gloria Hallelujah';
+  background-color: black;
+  width: 100%;
+}
+nav {
+  background: transparent;
+}
+
+a.brand-logo {
+  padding-left: 1em;
+  position: static;
+}
