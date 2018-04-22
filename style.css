@@ -1,8 +1,36 @@
-html {
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+body {
+  font-family: 'Dosis', 'Oxygen', sans-serif;
+  background-color: black;
+}
+
+nav {
+  box-shadow: none;
+}
+
+.content:before {
+  content: "";
+  position: fixed;
+  top: -5%;
+  left: -5%;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: block;
   background: linear-gradient(180deg, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.3) ),url(http://i.imgur.com/XLtSjHh.jpg);
   background-attachment: fixed;
-  font-family: 'Dosis', 'Oxygen', sans-serif;
   background-size: cover;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.content {
+  margin: 15px;
+  padding: 5px;
 }
 
 #main {
@@ -30,4 +58,53 @@ nav {
 a.brand-logo {
   padding-left: 1em;
   position: static;
+}
+
+/* Social Media Links */
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-github {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-github:hover {
+    background-color: #757575;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
 }
