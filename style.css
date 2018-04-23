@@ -34,8 +34,7 @@ nav {
 }
 
 #main {
-	display: flex;
-	flex-direction: column;
+	display: block;
 	min-height: 50vh;
 	justify-content: center;
 	text-align: center;
