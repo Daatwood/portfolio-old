@@ -9,23 +9,28 @@ nav {
   box-shadow: none;
 }
 
-.content:before {
-  content: "";
-  position: fixed;
-  top: -5%;
-  left: -5%;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  display: block;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.3) ),url(https://i.imgur.com/XLtSjHh.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
+.section.header {
+    background-color: #fafafa;
+    background-image: linear-gradient(to bottom, #fafafa, #5a5a5a 100%);
+    background-attachment: fixed;
+}
+
+.section.about {
+    background-color: #4caf50;
+    background-image: linear-gradient(to bottom, #fafafa, #4caf50 100%);
+    background-attachment: fixed;
+}
+
+.section.connect {
+    background-color: #315481;
+    background-image: linear-gradient(to bottom, #fafafa, #315481 100%);
+    background-attachment: fixed;
+}
+
+.section.projects {
+    background-color: #fef481;
+    background-image: linear-gradient(to bottom, #fafafa, #fef481 100%);
+    background-attachment: fixed;
 }
 
 .content {
@@ -33,77 +38,122 @@ nav {
   padding: 5px;
 }
 
-#main {
-	display: block;
-	min-height: 50vh;
-	justify-content: center;
-	text-align: center;
-}
 h1 {
   width: 100%;
-  text-transform: uppercase;
-  text-shadow: 5px 5px darkslategrey;
   font-size: 6em;
+}
+.card {
+    margin-top: 4em; 
 }
 .stylized {
   font-family: 'Gloria Hallelujah';
   background-color: black;
   width: 100%;
 }
-nav {
-  background: transparent;
+
+a.collection-item svg{
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out ;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
-a.brand-logo {
-  padding-left: 1em;
-  position: static;
+a.collection-item .title{
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
-/* Social Media Links */
-.social-icon {
-    color: #fff;
+ul.collection {
+    border: none !important;
 }
-ul.social-icons {
-    margin-top: 10px;
+
+.collection .collection-item {
+    border: none !important;
+    background-color: rgba(0, 0, 0, 0.0);
 }
-.social-icons li {
-    vertical-align: top;
-    display: inline;
+
+.collection-item:hover {
+    border-radius: 25px;
 }
-.social-icons a {
-    color: #fff;
-    text-decoration: none;
+
+a.collection-item input.url {
+    width: -webkit-fill-available !important;
+    visibility: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    font-family: monospace;
+    height: 1.5em;
+    padding: 0 1em 0 1em;
+    margin-left: 20px; 
 }
-.fa-twitter {
-    padding:10px 12px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
+@media screen and (min-width: 601px) {
+    a.collection-item:hover input.url{
+        visibility: visible;
+    }
 }
-.fa-twitter:hover {
-    background-color: #00aced;
+
+
+a.collection-item .title{
+    font-size: 1.5em !important;
+    margin-left: 10px;
+    font-family: Oxygen;
+    color: white;
 }
-.fa-github {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
+
+a.collection-item:hover .title {
+    margin-left: 30px;
+    text-decoration: underline;
+    text-decoration-color: #444;
+    color: #444;
 }
-.fa-github:hover {
-    background-color: #757575;
+
+a.collection-item.avatar svg.circle{
+    background-color: white;
 }
-.fa-linkedin {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
+
+a.collection-item.avatar:hover svg.circle {
+    background-color: black;
+    fill: white;
 }
-.fa-linkedin:hover {
-    background-color: #0073a4;
+
+a.collection-item.avatar:hover .circle{
+    width: 64px !important;
+    height: 64px !important;
+}
+
+.twitter {
+    fill: #00aced;
+}
+.github {
+    fill: #444;
+}
+.linkedin {
+    fill: #0073a4;
+}
+
+.card-image .btn-floating:hover {
+    width: 55px;
+    height: 55px;
+    line-height: 65px;
+    transform: translateX(10px);
+}
+
+/* #subheader:after {
+    content:"";
+    animation: spin 10s linear infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes spin {
+    2% { content:"E "; }
+    4% { content:"En"; }
+    6% { content:"Eng"; }
+    8% { content:"Engi"; }
+    10% { content:"Engin"; }
+    12% { content:"Engine"; }
+    14% { content:"Enginee"; }
+    16% { content:"Engineer"; }
 }
