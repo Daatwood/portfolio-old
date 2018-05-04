@@ -33,11 +33,6 @@ nav {
     background-attachment: fixed;
 }
 
-.content {
-  margin: 15px;
-  padding: 5px;
-}
-
 h1 {
   width: 100%;
   font-size: 6em;
@@ -55,14 +50,6 @@ a.collection-item svg{
     -o-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out ;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
-
-a.collection-item .title{
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
@@ -102,6 +89,11 @@ a.collection-item .title{
     margin-left: 10px;
     font-family: Oxygen;
     color: white;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 a.collection-item:hover .title {
@@ -142,6 +134,13 @@ a.collection-item.avatar:hover .circle{
     transform: translateX(10px);
 }
 
+.parallax-container {
+    height: 650px;
+}
+
+.rounded {
+    border-radius: 25px;
+}
 /* #subheader:after {
     content:"";
     animation: spin 10s linear infinite;
